@@ -1,0 +1,13 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(34, 34, 34);
+}
+h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} h2 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} p {
+  color: white;
+}
