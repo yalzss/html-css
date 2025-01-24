@@ -13,6 +13,9 @@
             font-weight: bold;
             font-style:normal
         }
+        * img {
+            width: 100%;
+        }
         * a {
             font-weight: bold;
             font-size: justify;
@@ -37,7 +40,7 @@
             font-weight: bold;
             font-size:justify;  
             background-color: white;
-            min-width: 320px;
+            min-width: 300px;
             max-width: 900px;
             padding: 5px;
             margin: -15px auto auto;
@@ -121,6 +124,10 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .centralizado#pequeno {
+            width: 50%;
+            display: block;
+        }
         .LinkYoutube {
             background-color: rgb(43, 54, 43);
             margin: 0px -5px 44px -5px;
@@ -150,7 +157,7 @@
             background-color: rgb(4, 196, 132);
             max-width: 900px;
             height: 300px;
-            padding: 10px 10px 10px 5px;
+            padding:0px 0px 100px 5px;
             margin: auto auto;
             box-shadow: 0px 0px 15px -3px black;
 
@@ -177,7 +184,6 @@
     </header>  
     <nav>
         <a href="#">Home</a>
-        <a href="#">Notícias</a>
         <a href="#">Curiosidades</a>
         <a href="#">Fale Conosco</a>
     </nav>
@@ -194,7 +200,7 @@
                   <p class="paragrafo">A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a href="https://androidcommunity.com/dan-morrill-shows-us-the-android-mascot-that-almost-was-20130103/" target="_blank" rel="external">Dan Morrill🔗</a>. Ele conta que abriu o <a href="https://inkscape.org/pt-br/" target="_blank" rel="external">linkscape🔗</a>(software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a sua equipe. não existia nenhuma solicitação da empresa para a criação de um mascote</p>
 
                   <picture>
-                     <source media="(max-width:850px )" srcset="imagens/dan-droids-pq.png" type="image/png">
+                     <source media="(max-width:400px )" srcset="imagens/dan-droids-pq.png" type="image/png">
                     <img src="imagens/dan-droids.png" alt="Dandroidpng" class="centralizado">
                   </picture>
                   <p class=dandroidsP> Essa primeira versão bizarra foi batizada em homenagem ao seu criador, Seriam os <br>
@@ -205,12 +211,12 @@
                     <h2 class="titulo">SURGE UM NOVO MASCOTE</h2>
                   <p class="paragrafo">A ideia de ter um mascote foi amuderecendo e a missão foi passada para um profissional da área. a ilustradora Russa <a href="https://en.wikipedia.org/wiki/Irina_Blok" target="_blank" rel="external">irina Blok🔗</a>, também funcionária do Google. Ficou com uma missão de representar o pequeno robô de uma maneira mais agradável</p>
                 <picture>
-                    <source media="(max-width:850px )" srcset="imagens/irina-blok-pq.jpg" type="image/jpg">
+                    <source media="(max-width:400px )" srcset="imagens/irina-blok-pq.jpg" type="image/jpg">
                     <img src="imagens/irina-blok.jpg" alt="Creator Bug Droid" class="centralizado">
                  </picture>
                   <p class="paragrafo">A ideia principal era representar tudo gratificamente com poucos traços e de forma mais chapada. O desenho também deveria gerar indentificação rápida com quem o olha. Surgiu então o Bugdroid. O novo mascote do Android</p>
 
-                  <img src="imagens/bugdroid.png" alt="BugDroid imagem" class="centralizado">
+                  <img src="imagens/bugdroid.png" alt="BugDroid imagem" class="centralizado" id="pequeno">
                   <p class="paragrafo">A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indiciar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata simples, limpo e objetivo.</p>
 
                   <div class="LinkYoutube"><iframe width="700" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=xACbBfOSslqB4N11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
