@@ -50,7 +50,7 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 2.5vw;
+    font-size: 2.90em;
 }
 section > p {
     padding-bottom: 2em;
@@ -94,4 +94,12 @@ footer {
 }
 strong {
     font-weight: bolder;
+}
+@media screen and (max-width:400px) {
+    footer {
+        font-size:1em
+    }
+    section {
+        font-size:2em; 
+    }
 }
