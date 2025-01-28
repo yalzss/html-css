@@ -7,18 +7,42 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            width: 25%;
+            margin: auto auto;
+            background-color: rgb(44, 44, 44);
+        }
+        body > h1 {
+            text-align: center;
+            color: white;
         }
         table {
             width: 500px; 
             border-collapse: collapse;
+            background-color: white;
+            position: relative;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(0, 0, 0);
+            color: white;
         }
         th, td {
             border: 1px solid black;
-            padding: 10px 
+            padding: 10px;
         }
         thead {
             background-color: black;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -2px;
+            background-color: black;
+        }
+        tbody > tr:nth-child(2n) { 
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -34,6 +58,7 @@
             TFOOT
                 TR,TD,TH !-->
     <table>
+        <caption>População das Capitais do Brasil</caption>
         <thead>
             <tr>
                 <th>Estado</th>
@@ -48,196 +73,196 @@
                 <td>São Paulo</td>
                 <td>São Paulo</td>
                 <td>SP</td>
-                <td>44 411 238</td>
+                <td class="number">44 411 238</td>
                 <td>32,4</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
                 <td>Belo Horizonte</td>
                 <td>MG</td>
-                <td>20 539 989</td> 
+                <td class="number">20 539 989</td> 
                 <td>8,7</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
                 <td>Rio de Janeiro</td>
                 <td>RJ</td>
-                <td>16 055 174</td>
+                <td class="number">16 055 174</td>
                 <td>11</td>
             </tr>
             <tr>
                 <td>Bahia</td>
                 <td>Salvador</td>
                 <td>BA</td>
-                <td>14 141 626</td>
+                <td class="number">14 141 626</td>
                 <td>4.1</td>
             </tr>
             <tr>
                 <td>Rio Grande do Sul</td>
                 <td>Porto Alegre</td>
                 <td>RS</td>
-                <td>11 882 965</td>
+                <td class="number">11 882 965</td>
                 <td>6,4</td>
             </tr>
             <tr> 
                 <td>Paraná</td>
                 <td>Curitiba</td>
                 <td>PR</td>
-                <td>11 444 380</td>
+                <td class="number">11 444 380</td>
                 <td>6,3</td>
             </tr>
             <tr>
                 <td>Pernambuco</td>
                 <td>Recife</td>
                 <td>PE</td>
-                <td>9 058 931</td>
+                <td class="number">9 058 931</td>
                 <td>2,6</td>
             </tr>
             <tr>
                 <td>Ceará</td>
                 <td>Fortaleza</td>
                 <td>CE</td>
-                <td>8 794 957</td>
+                <td class="number">8 794 957</td>
                 <td>2,2</td>
             </tr>
             <tr>
                 <td>Pará</td>
                 <td>Belém</td>
                 <td>PA</td>
-                <td>8 794 957</td>
+                <td class="number">8 794 957</td>
                 <td>2,2</td>
             </tr>
             <tr>
                 <td>Santa Catarina</td>
                 <td>Florianópolis</td>
                 <td>SC</td>
-                <td>7 610 361</td>
+                <td class="number">7 610 361</td>
                 <td>2,9</td>
             </tr>
             <tr>
                 <td>Goiás</td>
                 <td>Goiânia</td>
                 <td>GO</td>
-                <td>7 056 495</td>
+                <td class="number">7 056 495</td>
                 <td>2,9</td>
             </tr>
             <tr>
                 <td>Maranhão</td>
                 <td>São Luís</td>
                 <td>MA</td>
-                <td>6 755 805</td>
+                <td class="number">6 755 805</td>
                 <td>1,3</td>
             </tr>
             <tr>
                 <td>Paraíba</td>
                 <td>João Pessoa</td>
                 <td>PB</td>
-                <td>3 974 687</td>
+                <td class="number">3 974 687</td>
                 <td>0,9</td>
             </tr>
             <tr>
                 <td>Tocantins</td>
                 <td>Manaus</td>
                 <td>AM</td>
-                <td>3 941 613</td>
+                <td class="number">3 941 613</td>
                 <td>1,4</td>
             </tr>
             <tr>
                 <td>Espirito Santo</td>
                 <td>Vitória</td>
                 <td>ES</td>
-                <td>3 833 712</td>
+                <td class="number">3 833 712</td>
                 <td>2</td>
             </tr>
             <tr>
                 <td>Mato Grosso</td>
                 <td>Cuiabá</td>
                 <td>MT</td>
-                <td>3 658 649</td>
+                <td class="number">3 658 649</td>
                 <td>1,8</td>
             </tr>
             <tr>
                 <td>Rio Grande do Norte</td>
                 <td>Natal</td>
                 <td>RN</td>
-                <td>3 302 729</td>
+                <td class="number">3 302 729</td>
                 <td>1</td>
             </tr>
             <tr>
                 <td>Piauí</td>
                 <td>Teresina</td>
                 <td>PI</td>
-                <td>3 271 199</td>
+                <td class="number">3 271 199</td>
                 <td>0,7</td>
             </tr>
             <tr>
                 <td>Alagoas</td>
                 <td>Maceió</td>
                 <td>AL</td>
-                <td>3 127 683</td>
+                <td class="number">3 127 683</td>
                 <td>0,8</td>
             </tr>
             <tr>
                 <td>Distrito Federal</td>
                 <td>Brasilia</td>
                 <td>DF</td>
-                <td>2 817 381</td>
+                <td class="number">2 817 381</td>
                 <td>3,6</td>
             </tr>
             <tr>
                 <td>Mato Grosso do Sul</td>
                 <td>Campo Grande</td>
                 <td>MS</td>
-                <td>2 757 013</td>
+                <td class="number">2 757 013</td>
                 <td>1,4</td>
             </tr>
             <tr>
                 <td>Sergipe</td>
                 <td>Aracaju</td>
                 <td>SE</td>
-                <td>2 210 004</td>
+                <td class="number">2 210 004</td>
                 <td>0,6</td>
             </tr>
             <tr>
                 <td>Rondônia</td>
                 <td>Porto Velho</td>
                 <td>RO</td>
-                <td>1 581 196</td>
+                <td class="number">1 581 196</td>
                 <td>0,6</td>
             </tr>
             <tr>
                 <td>Tocantins</td>
                 <td>Palmas</td>
                 <td>TO</td>
-                <td>1 511 460</td>
+                <td class="number">1 511 460</td>
                 <td>0,5</td>
             </tr>
             <tr>
                 <td>Acre</td>
                 <td>Rio Branco</td>
                 <td>AC</td>
-                <td>830 018</td>
+                <td class="number">830 018</td>
                 <td>0,2</td>
             </tr>
             <tr>
                 <td>Amapá</td>
                 <td>Macapá</td>
                 <td>AP</td>
-                <td>733 759</td>
+                <td class="number">733 759</td>
                 <td>0,2</td>
             </tr>
             <tr>
                 <td>Roraima</td>
                 <td>Boa Vista</td>
                 <td>RR</td>
-                <td>636 707</td>
+                <td class="number">636 707</td>
                 <td>0,2</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td>000000</td>
+                <th colspan="3">Total de Habitantes</th>
+                <td colspan="3"><strong>204.734.688</strong></td>
             </tr>
         </tfoot>
     </table>
