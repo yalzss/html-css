@@ -1,0 +1,52 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 80%;
+    gap: 10px;
+
+}
+section {
+    border: 3px solid #525252;
+    border-radius: 5px;
+    display: flex;
+    flex:250px 1;
+    flex-direction: column;
+}
+ul {
+    margin: 30px;
+}
+.salary {
+    display: flex;
+    align-items: center;
+}
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: #52525b;
+    color: white;
+    padding: 5px;
+}
+h3 {
+    margin: 20px;
+    background-color: #84cc16;
+    color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+}
+section:nth-child(3) h2 {
+    background-color: #6d28d9;
+}
